@@ -16,37 +16,36 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="myGroup">
+    <div id="group">
       <nav class="topnav" id="myTopnav">
-        <ul>
-          <li>
-            <img src="images/firma.png" />
-          </li>
-          <li>
-            <a href="#bio">BIO</a>
-          </li>
-          <li>
-            <a href="#trabajo">TRABAJO</a>
-          </li>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </ul>
+        <img src="images/firma.png" />
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#bio">BIO</a>
+        <a href="#trabajos">TRABAJO</a>
       </nav>
       <main>
-        <header class="myHeader">
+        <header id="myHeader">
           <h1>
             ¡HOLA! SOY SEBASTIÁN SOUZA, UN DESARROLLADOR VIVIENDO EN BUENOS
             AIRES, ARGENTINA
           </h1>
         </header>
         <section>
+          <header id="trabajos">
+            <h2>LO QUE HE ESTADO HACIENDO:</h2>
+          </header>
           <article>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             distinctio qui maiores dignissimos? Dignissimos numquam recusandae
@@ -77,18 +76,22 @@
           </article>
         </section>
       </main>
-      <footer></footer>
+      <footer id="pie">
+        <section>SOCIAL</section>
+        <section>CONTACTO</section>
+        <section>ACTUALMENTE EN</section>
+      </footer>
     </div>
   </body>
-  <!-- <script>
-      /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
+  <script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
       }
-    </script> -->
+    }
+  </script>
 </html>
